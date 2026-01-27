@@ -212,7 +212,11 @@ Together, these blocks ensure that the chip works **reliably across process, vol
 ---
 
 ## **Basic Bandgap Reference Circuit** 
+
+![Basic Bandgap Reference Circuit](images/Screenshot 2026-01-27 205517.png)
+
 ## Temperature-Independent Reference Voltage
+
 
 In integrated circuit (IC) design, many critical blocks such as ADCs, DACs, LDOs, and PLLs require a stable reference voltage. This reference must remain nearly constant even when temperature, supply voltage, and process parameters vary. A Bandgap Reference (BGR) circuit is used to generate such a temperature-independent reference voltage.
 
