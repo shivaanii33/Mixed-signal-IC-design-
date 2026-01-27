@@ -213,7 +213,7 @@ Together, these blocks ensure that the chip works **reliably across process, vol
 
 ## **Basic Bandgap Reference Circuit** 
 
-![Basic Bandgap Reference Circuit](images/Screenshot 2026-01-27 205517.png)
+![Basic Bandgap Reference Circuit](DAY-1/images/Screenshot 2026-01-27 205517.png)
 
 ## Temperature-Independent Reference Voltage
 
