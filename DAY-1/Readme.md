@@ -346,3 +346,82 @@ This structure ensures robustness against temperature, process, and supply varia
 A bandgap reference circuit generates a stable, temperature-independent voltage by combining a CTAT voltage (VBE) with a PTAT voltage (VT ln(n)). This reference is a fundamental building block in IC design and ensures reliable operation across process, voltage, and temperature variations.
 
 
+
+
+## **MOS circuit analyses**
+### Circuit 1 
+
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/e0202da5639b745d4106bd9c803b1f6b613bbbc4/DAY-1/images/Screenshot%202026-01-28%20174011.png)
+
+**Paramerters**
+
+- input voltage Vin = 100mVp-p, Vdc = 0.6V, 1KHz 
+- mosfet's w = 120nm (default) l = 45nm 
+- Rd = 1Kohm 
+- Supply VDD =1V 
+
+
+**1) DC Analysis** 
+
+
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/e0202da5639b745d4106bd9c803b1f6b613bbbc4/DAY-1/images/Screenshot%202026-01-28%20174057.png)
+
+region of the operation is 2 - **saturation**, which is the necessary condition for the mosfet to work as the commmon sourse amplifier.
+
+---
+
+
+- In order to set the proper operation point Vdc and Rd and made as variables and parametric analysis is carried out using Vdc variation from 0 to 1V with 0.1 as a step size 
+- meanwhile the Rd variable is choosen as the sweeping variable during the dc analysis and it is varied form 100 to 10000ohms 
+- Hence the results are obtained by varing Rd wrt Output for the different values of Vdc 
+
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/e0202da5639b745d4106bd9c803b1f6b613bbbc4/DAY-1/images/Screenshot%202026-01-28%20174147.png)
+
+
+In order to obtain the maximum swing of the output, the values of Vdc and Rd are choosen in such a way that Vout will be equal to VDD/2.
+
+- Therefore from the Result Rd is fixed as 5Kohms and Vdc=0.6V 
+
+---
+
+**2) Transient Analysis** 
+
+After fixing the values of Vdc and Rd transient analysis is obtained by giving stoptime as 5ms 
+
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/e0202da5639b745d4106bd9c803b1f6b613bbbc4/DAY-1/images/Screenshot%202026-01-28%20174201.png)
+
+The output waveform is inverted as it is a CS amplifier and it is amplified with the desired gain 
+
+---
+
+**2) AC Analysis** 
+
+For Vin the AC amplitude is given as 1V and now ac analysis is carried out wrt frequency varying from 0.1Hz to 10THz with 20 as a points per decade 
+
+
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/e0202da5639b745d4106bd9c803b1f6b613bbbc4/DAY-1/images/Screenshot%202026-01-28%20174213.png)
+
+The gain is found as 3.25 nearly 
+
+As frequency increases, Vout starts decreasing sharply after a certain frequency.
+
+This roll-off is due to:
+
+- MOSFET parasitic capacitances (Cgs, Cgd)
+
+- Load resistance (RD) forming RC poles
+
+- The circuit exhibits low-pass behavior.
+
+- Observation: The circuit has a limited bandwidth.
+- The frequency at which Vout starts dropping significantly represents the cut-off frequency.
+
+- Beyond this frequency, the amplifier cannot respond effectively to the input signal.
+
+- Gain reduces rapidly at high frequencies.
+
+
+
+
+
+
