@@ -13,7 +13,7 @@ As analysed in the previous circuit (day-1), the resistor which is present in th
 The  behaviour of the mosfet is analysed with pmos as the diode connected transistor in which drain and the gate terminals are conencted.
 
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20203720.png)
 
 ### Parameters 
 - Input -> 50mVp-p , 1KHz, Vdc = 0.6V 
@@ -26,7 +26,7 @@ for the circuit to behave as the amplifier both the mosfets should be operation 
 
 ### Results
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20203752.png)
 
 now the pmos behaves as the idea current source with the resistance as 1/gm 
 
@@ -37,7 +37,7 @@ For the maximum output swing the Vout is expected to be nearly Vdd/2 ~ 0.5V
 - Hence this can be achieved by performing the parametric dc analsyis with varying the width of the pmos transistor from 120nm to 2um with 5 ans the step size  and observing the vout for the different values of Vdc (input biasing voltage)
 - Thereby the proper values for the  width of pmos and Vdc can be obtained which is responsible for the maximum swing of the output 
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20203812.png)
 
 - for w= 1um (pmos) and Vdc = 0.5V the value of Vout will be equal to 0.5V (Vdd/2)
 
@@ -45,16 +45,16 @@ For the maximum output swing the Vout is expected to be nearly Vdd/2 ~ 0.5V
 ### Results 
 - The above mentioned values are fixed and transient analysis is carried out to get the proper amplification 
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20210608.png)
 
 ## 3) AC Analysis 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20210629.png)
 
 The gain of 0.68 is obtained from the circuit 
 
 ## **Circuit 2**
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20220739.png)
 
 - From the previous circuit where the drain and the gate terminals of the pmos transistor were connected because of which it was behaving as the Diode connected transistor, 
 - In this circuit the gate terminal of the pmos is biased with dc voltage 0.5V ensuring that pmos remains in the saturation region 
@@ -64,10 +64,10 @@ remaning all follows the same as previos one with Vdc = 0.6V
 
 **The comparision between the Circuit 1 and 2 with both Transient and the frequency analysis can we observed with the below results**
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20220714.png)
 
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20220727.png)
 
 
 From this higher gain and there by the amplification can be observed from the circuit 2 because here the pmos is acting as the current source 
@@ -75,7 +75,7 @@ From this higher gain and there by the amplification can be observed from the ci
 
 ## **Circuit 3**
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20220943.png)
 
 Differential mos amplifier with 2 pmos and 3 nmos 
 
@@ -89,9 +89,9 @@ in order to verify the amplification Vin of one nmos is made 50mVp-p with 1KHz a
 
 **Results**
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20221041.png)
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20221131.png)
 
 ---
 
@@ -101,8 +101,9 @@ Once the circuit is ready for the purpose of layout design and fabrication the s
 - For the symbol you want rearrange the pins as required also adjust the boundary using the shaping tools, check it and save it 
 - Open another cellview import the symbol you created from your library, this is the test circuit, now connect all the external sources and verify the results 
 
-![circuit 1 ](images/bandgap_basic_circuit.png)
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20221246.png)
  The results should be same as you got from your design 
+ 
 
 
 
@@ -122,5 +123,4 @@ Once the circuit is ready for the purpose of layout design and fabrication the s
 
 
 - [@octokatherine](https://www.github.com/octokatherine)
-
 
