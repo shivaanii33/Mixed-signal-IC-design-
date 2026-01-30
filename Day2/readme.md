@@ -102,8 +102,28 @@ Once the circuit is ready for the purpose of layout design and fabrication the s
 - Open another cellview import the symbol you created from your library, this is the test circuit, now connect all the external sources and verify the results 
 
 ![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/75b1110d3817f1361fa0019cad4f1b00854bfe40/Day2/Images/Screenshot%202026-01-29%20221246.png)
- The results should be same as you got from your design 
- 
+ The results should be same as you got from your design. 
+
+ ---
+ Spectrum of the circuit using the rectangular window is also obtained 
+
+
+ ![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/ca9e14aa5f81b7968232039ef6dfa53b15ef4320/Day2/Images/Screenshot%20from%202026-01-29%2010-34-47.png)
+
+
+ ![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/ca9e14aa5f81b7968232039ef6dfa53b15ef4320/Day2/Images/Screenshot%20from%202026-01-29%2010-37-15.png)
+
+
+- Now if the Vinp input voltage is made as 500mV the output will be clipped off 
+
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/ca9e14aa5f81b7968232039ef6dfa53b15ef4320/Day2/Images/Screenshot%20from%202026-01-29%2010-36-08.png)
+
+![circuit 1 ](https://github.com/shivaanii33/Mixed-signal-IC-design-/blob/ca9e14aa5f81b7968232039ef6dfa53b15ef4320/Day2/Images/Screenshot%20from%202026-01-29%2010-36-59.png)
+
+
+
+
+
 
 
 
